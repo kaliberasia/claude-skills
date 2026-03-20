@@ -1,73 +1,70 @@
 <p align="center">
-  <strong>kaliber / claude-skills</strong>
+  <strong>kaliber</strong>
+</p>
+
+<h1 align="center">Claude Skills by Kaliber</h1>
+
+<p align="center">
+  Open-source Claude Code skills built by an AI-native marketing agency.<br>
+  Practitioner-tested. Production-grade. Free to use.
 </p>
 
 <p align="center">
-  Open-source Claude Code skills from an AI-native marketing agency.
-</p>
-
-<p align="center">
-  <a href="https://kalibergroup.netlify.app/claude-skills">Website</a> &middot;
-  <a href="https://kaliber.group">About Kaliber</a> &middot;
-  <a href="#install">Install</a>
+  <a href="https://kalibergroup.netlify.app/claude-skills">Website</a> · <a href="https://kalibergroup.netlify.app">About Kaliber</a> · <a href="https://apacmarketers.com">APAC Marketers</a>
 </p>
 
 ---
 
-## What this is
+## What is this?
 
-These are the actual Claude Code skills we use daily at [Kaliber](https://kaliber.group) — a specialist marketing group in Singapore. Not demos. Not templates. Production tools that run real campaigns, write real content, and manage real client work.
+Kaliber is a marketing group in Singapore that runs on Claude Code. These are the skills we use daily — ghostwriting, ad creation, data scraping, prompt refinement, knowledge management, and campaign auditing.
 
-We're releasing them because we believe AI infrastructure should compound across the industry, not stay locked inside agencies.
+We're open-sourcing them because the best tools get better when more people use them.
 
 ## Skills
 
-| Skill | What it does |
-|-------|-------------|
-| **ghostwriter** | Writes long-form articles, LinkedIn posts, and short-form content in a trained voice. Interview-first workflow — extracts thinking before writing. |
-| **static-ad-sequencer** | Generates 3-part static ad sequences (Seed → Personalise → Resolve) for paid social. Visual direction + copy mechanics. Works across any category. |
-| **lp-generate** | Builds high-converting landing pages from a URL. Scrapes brand data, extracts design system, optionally pulls Google Ads context, generates production HTML. |
-| **prompt-optimizer** | Analyzes raw prompts, identifies gaps, and outputs optimized versions. Advisory only — improves the prompt, doesn't execute the task. |
-| **data-scraper-agent** | Builds automated data collection agents for any public source. Runs on GitHub Actions, enriches with LLM, stores in Notion/Sheets/Supabase. Free. |
-| **knowledge-capture** | Codifies session learnings into a structured knowledge hub. Extracts principles, processes, and gotchas through guided reflection. |
+| Skill | What it does | Install |
+|-------|-------------|---------|
+| **[Kaliber Ghostwriter Pro](skills/ghostwriter-pro/)** | Long-form articles, LinkedIn posts, and short-form content in any voice. Interview → outline → draft workflow with research gap-filling. | `claude install-skill kaliberasia/claude-skills/skills/ghostwriter-pro` |
+| **[Kaliber Ad Creator](skills/ad-creator/)** | 3-part static ad sequences (Seed → Personalise → Resolve) for Meta, TikTok, Instagram. Scroll-stopping creative without video. | `claude install-skill kaliberasia/claude-skills/skills/ad-creator` |
+| **[Kaliber Instant Auditor](skills/instant-auditor/)** | Structured campaign diagnostics across performance, creative, intelligence, and infrastructure. Walk away with an action plan. | `claude install-skill kaliberasia/claude-skills/skills/instant-auditor` |
+| **[Kaliber Prompt Perfector](skills/prompt-perfector/)** | Analyzes raw prompts, identifies gaps, matches optimal Claude Code components, and outputs a production-ready prompt. | `claude install-skill kaliberasia/claude-skills/skills/prompt-perfector` |
+| **[Kaliber Auto-Scraper](skills/auto-scraper/)** | Fully automated data collection agent for any public source. Scrapes on schedule, enriches with AI, stores anywhere. Runs free on GitHub Actions. | `claude install-skill kaliberasia/claude-skills/skills/auto-scraper` |
+| **[Kaliber Knowledge Vault](skills/knowledge-vault/)** | Captures session learnings into a structured knowledge hub. Extracts principles, processes, and gotchas from any working session. | `claude install-skill kaliberasia/claude-skills/skills/knowledge-vault` |
 
-More skills shipping regularly. Watch this repo for updates.
-
-## Install
-
-Each skill is a self-contained folder. To install:
+## Quick start
 
 ```bash
-# Clone the repo
-git clone https://github.com/kaliberasia/claude-skills.git
-
-# Copy a skill into your project
-cp -r claude-skills/skills/ghostwriter .claude/skills/ghostwriter
+# Install any skill with one command
+claude install-skill kaliberasia/claude-skills/skills/ghostwriter-pro
 ```
 
-Or install a single skill directly:
+## How these are built
 
-```bash
-# One-liner install
-curl -sL https://raw.githubusercontent.com/kaliberasia/claude-skills/main/install.sh | bash -s ghostwriter
+Every skill follows the same structure:
+
+```
+skills/ghostwriter-pro/
+├── SKILL.md          # The skill definition (triggers, workflow, rules)
+└── references/       # Supporting context (voice guides, frameworks, templates)
 ```
 
-## How skills work
+Skills are plain markdown files — no dependencies, no build step, no API keys needed. They run inside Claude Code and extend its capabilities through structured prompts and workflows.
 
-Claude Code skills are markdown files that extend Claude's capabilities within a project. When you type a trigger phrase (like "write an article" or "build a landing page"), the matching skill activates and guides Claude through a structured workflow.
+## Contributing
 
-Each skill contains:
-- `SKILL.md` — The skill definition (triggers, workflow, constraints)
-- `references/` — Supporting context (templates, examples, frameworks)
+Found a bug? Have an improvement? PRs welcome. 
 
-Skills live in your project's `.claude/skills/` directory and are automatically available in any Claude Code session.
+If you build something cool with these skills, tell us — we feature community work on [our website](https://kalibergroup.netlify.app/claude-skills).
 
-## Built by
+## About Kaliber
 
-[Kaliber](https://kaliber.group) is an AI-native marketing group in Singapore. We combine the strategic depth of a consultancy with the execution speed of an agency — grounded in evidence-based marketing principles and built on proprietary AI infrastructure.
+We're an AI-native marketing group in Singapore. Founded by ex-Google leadership, we combine the strategic depth of a consultancy with the execution speed of an agency — powered by proprietary AI infrastructure.
 
 Every engagement starts with a diagnosis. Every recommendation is earned.
 
-## License
+[Get a diagnosis →](https://kalibergroup.netlify.app/contact)
 
-MIT — use these however you want. Attribution appreciated but not required.
+---
+
+<p align="center"><sub>Built by <a href="https://kalibergroup.netlify.app">Kaliber</a> — Singapore's AI-native marketing group</sub></p>
