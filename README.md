@@ -17,7 +17,7 @@
 
 ## What is this?
 
-Kaliber is a marketing group in Singapore that runs on Claude Code. These are the skills we use daily — ghostwriting, ad creation, data scraping, prompt refinement, knowledge management, and campaign auditing.
+Kaliber is a marketing group in Singapore that runs on Claude Code. These are the skills we use daily — ad creation, data scraping, prompt refinement, knowledge management, and campaign auditing.
 
 We're open-sourcing them because the best tools get better when more people use them.
 
@@ -25,7 +25,6 @@ We're open-sourcing them because the best tools get better when more people use 
 
 | Skill | What it does | Install |
 |-------|-------------|---------|
-| **[Kaliber Ghostwriter Pro](skills/ghostwriter-pro/)** | Long-form articles, LinkedIn posts, and short-form content in any voice. Interview → outline → draft workflow with research gap-filling. | `claude install-skill kaliberasia/claude-skills/skills/ghostwriter-pro` |
 | **[Kaliber Ad Creator](skills/ad-creator/)** | 3-part static ad sequences (Seed → Personalise → Resolve) for Meta, TikTok, Instagram. Scroll-stopping creative without video. | `claude install-skill kaliberasia/claude-skills/skills/ad-creator` |
 | **[Kaliber Instant Auditor](skills/instant-auditor/)** | Structured campaign diagnostics across performance, creative, intelligence, and infrastructure. Walk away with an action plan. | `claude install-skill kaliberasia/claude-skills/skills/instant-auditor` |
 | **[Kaliber Prompt Perfector](skills/prompt-perfector/)** | Analyzes raw prompts, identifies gaps, matches optimal Claude Code components, and outputs a production-ready prompt. | `claude install-skill kaliberasia/claude-skills/skills/prompt-perfector` |
@@ -36,7 +35,7 @@ We're open-sourcing them because the best tools get better when more people use 
 
 ```bash
 # Install any skill with one command
-claude install-skill kaliberasia/claude-skills/skills/ghostwriter-pro
+claude install-skill kaliberasia/claude-skills/skills/ad-creator
 ```
 
 ## How these are built
@@ -44,7 +43,7 @@ claude install-skill kaliberasia/claude-skills/skills/ghostwriter-pro
 Every skill follows the same structure:
 
 ```
-skills/ghostwriter-pro/
+skills/ad-creator/
 ├── SKILL.md          # The skill definition (triggers, workflow, rules)
 └── references/       # Supporting context (voice guides, frameworks, templates)
 ```
